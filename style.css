@@ -92,6 +92,7 @@ section {
 .card-container {
   padding-block: 4rem;
   display: flex;
+
   justify-content: space-between;
   width: min(1296px, 90%);
   margin-inline: auto;
@@ -112,4 +113,17 @@ section {
 .card-heading {
   margin-top: 1rem;
   font-size: clamp(1.125rem, 1rem + 1vw, 3rem);
+}
+
+@media screen and (max-width: 699px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    flex: 0 1 min(295px, 95%);
+    width: min(295px, 95%);
+
+    margin-bottom: 1rem;
+  }
 }
