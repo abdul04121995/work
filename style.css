@@ -111,4 +111,5 @@ section {
 }
 .card-heading {
   margin-top: 1rem;
+  font-size: clamp(1.125rem, 1rem + 1vw, 3rem);
 }
